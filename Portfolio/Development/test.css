@@ -1,0 +1,99 @@
+/*
+	Name: Photography Portfolio
+	Date: June 2011
+	Version: 1.0
+	Author: Matt Essam
+	
+*/
+
+/* Imports */
+@import url("reset.css");
+
+/*misc*/
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear:both; }
+
+
+body {
+    background: url('../Images/Background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    height:100%;
+    width:100%;
+}
+
+#main{
+  clear:both;
+  margin:0 auto;
+  
+}
+
+#slider {
+  width: 840px;/*change this to alter width of slider*/
+  margin: 0 auto;
+  position: relative;
+  color:white;
+}
+
+/*ID for the slide film image*/
+#slidefilm{
+  position:absolute;
+  z-index:10;
+  
+}
+
+#navbar{
+  height:80px;
+ 
+}
+
+.navigation li {
+    display:inline;
+    list-style:none;
+    padding:10px;
+    color:white;
+    font-family:helvetica,sans-serif;
+    font-weight:bold;
+    
+}
+
+.navigation {
+    padding:10px;
+    width:450px;
+    margin-left:480px;
+    margin-bottom:20px;
+    background: url('../Images/NavBAr.png');
+    text-align:center;
+}
+
+
+.navigation a:link, a:visited {
+	
+	text-decoration: none;
+        color:white;
+       
+}
+.navigation a:hover, a:active{
+    color:green;
+    background-color:brown;
+}
+
+
+.scroll {
+  height: 580px;
+  overflow: auto;
+  position: relative; /* fix for IE to respect overflow */
+  clear: left;
+  padding-top:40px;
+  
+}
+
+.scrollContainer div.panel {
+  padding: 20px;
+  height: 520px;
+  width: 800px; 
+  margin:auto;
+  background: url('../Images/film_background.png');
+}

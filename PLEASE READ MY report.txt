@@ -1,0 +1,21 @@
+report adding / editing /deleting comments
+
+Added innovative (reqirement?) feature security check, when editing or deleting a message, to stop SQL MESSAGE injection attacks, where people can manufacutre a form post and send to the server in order to edit/delete someone elses post.
+
+The security check uses a SQL "WHERE AND" CLAUSE; against sessions username ($_SESSION[username']) AND username of the comment.
+
+is_array is used to check weather there are any results from the custom query method in the MyDatabase class.  If there were any results then this funtion returns true, signifying the security check passed.
+
+editComment_ID and deleteComment_ID are sent to the index.php page and checked at the start to perform the relevant database operations.
+
+An extra field was added to the comments table, that auto_increments, giving a unique identifier to each comment.  This allows each comment in turn to be editable or removable from the database.
+
+the Div tag inline style in the comments section is dynamically modified if the user logged in is the same as the user who made the comment.
+
+Update and Delete buttons have seperate forms so that either editComment_ID OR deleteComment_ID is set but not both.  This allows the index.php page to test for which button has been pressed by checking each editComment_ID AND deleteComment_ID then taking action based on the name.
+
+A margin of 20px is added to comments which match the logged in user by checking the $_SESSION array for a cookie containing the current username logged in. i.e. $_SESSION['username']
+
+usercomments are parsed and cleaned ready for adding or updating a comment in the database, avoiding MySQL Injection attacks.
+
+

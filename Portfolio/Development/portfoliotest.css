@@ -1,0 +1,92 @@
+/*
+	Name: Photography Portfolio
+	Date: June 2011
+	Version: 1.0
+	Author: Matt Essam
+	
+*/
+
+/* Imports */
+@import url("reset.css");
+
+/*misc*/
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear:both; }
+
+
+
+
+
+body {
+    background: url('../Images/Background.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height:100%;
+    width:100%;
+}
+ 
+#slider{
+    background:url('../Images/NavBar.png');
+    background-repeat:repeat-x;
+    height:80px;
+    width:920px;
+    padding-top:30px;
+    position:relative;
+}
+
+#navigation li {
+    display:inline;
+    list-style:none;
+    padding:10px;
+    color:white;
+    font-family:helvetica,sans-serif;
+    font-weight:bold;
+    
+}
+
+#navigation {
+    padding:10px;
+    margin-left:600px;
+ 
+}
+
+
+#navigation a:link, a:visited {
+	
+	text-decoration: none;
+        color:white;
+       
+}
+#navigation a:hover, a:active{
+    color:green;
+    background-color:brown;
+}
+
+#container960{
+    width:960px;
+    margin:auto;
+     
+}
+
+
+
+
+.scroll {
+  height: 610px;
+  overflow: auto;
+  position: relative; /* fix for IE to respect overflow */
+  clear: left;
+  background: url('../Images/SlideFilm.png');
+  background:black;
+  background-repeat:no-repeat;
+  color:white;
+  
+}
+
+.scrollContainer div.panel {
+  padding: 20px;
+  height: 650px;
+  width: 560px; /* change to 560px if not using JS to remove rh.scroll */
+}
+

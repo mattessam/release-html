@@ -1,0 +1,89 @@
+/*
+	Name: Photography Portfolio
+	Date: June 2011
+	Version: 1.0
+	Author: Matt Essam
+	
+*/
+
+/* Imports */
+@import url("reset.css");
+
+/*misc*/
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear:both; }
+
+
+
+
+
+body {
+    background: url('../Images/Background.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height:100%;
+    width:100%;
+}
+ 
+#navigation{
+    background:url('../Images/NavBar.png');
+    background-repeat:repeat-x;
+    height:80px;
+    padding-top:30px;
+}
+
+#navigation li {
+    display:inline;
+    list-style:none;
+    padding:10px;
+    color:white;
+    font-family:helvetica,sans-serif;
+    font-weight:bold;
+    
+}
+
+#navigation ul{
+    padding:10px;
+    margin-left:600px;
+    
+    
+}
+
+
+#navigation a:link, a:visited {
+	
+	text-decoration: none;
+        color:white;
+       
+}
+#navigation a:hover, a:active{
+    color:green;
+    background-color:brown;
+}
+
+#container960{
+    width:960px;
+    margin:auto;
+     
+}
+
+#slidefilm{
+    background: url('../Images/SlideFilm.png');
+    background-repeat:no-repeat;
+    width:1050px;
+    margin:auto;
+    height:800px;
+    overflow:hidden;
+    
+}
+
+#filmbackground{
+    background: url('../Images/Film_background.png');
+    margin:auto;
+    background-repeat:no-repeat;
+    height:640px;
+    width:944px;
+    margin-top:82px;
+    
+}

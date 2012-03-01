@@ -1,0 +1,82 @@
+*
+	Name: Photography Portfolio
+	Date: June 2011
+	Version: 1.0
+	Author: Matt Essam
+	
+*/
+
+/* Imports */
+@import url("reset.css");
+
+/*misc*/
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear:both; }
+
+
+body {
+    background: url('../Images/Background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    height:100%;
+    width:100%;
+}
+
+
+#slider {
+  width: 961px;
+  margin: 0 auto;
+  position: relative;
+  color:white;
+}
+
+.navigation li {
+    display:inline;
+    list-style:none;
+    padding:10px;
+    color:white;
+    font-family:helvetica,sans-serif;
+    font-weight:bold;
+    
+}
+
+.navigation {
+    padding:10px;
+    margin-left:600px;
+    margin-bottom:0px;
+    border:1px solid red;
+ 
+}
+
+
+.navigation a:link, a:visited {
+	
+	text-decoration: none;
+        color:white;
+       
+}
+.navigation a:hover, a:active{
+    color:green;
+    background-color:brown;
+}
+
+
+.scroll {
+  height: 620px;
+  overflow: auto;
+  position: relative; /* fix for IE to respect overflow */
+  clear: left;
+  border:1px solid blue;
+  
+}
+
+.scrollContainer div.panel {
+  padding: 20px;
+  height: 580px;
+  width: 900px; /* change to 560px if not using JS to remove rh.scroll */
+  border:1px solid white;
+  margin:auto;
+  background: url('../Images/film_background.png');
+}
